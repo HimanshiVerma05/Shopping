@@ -1,0 +1,61 @@
+{
+    "HOME" :{
+        "TITLE" :"Zuhause",
+        "LOGOUT":"Ausloggen",
+        "CART":"Warenkorb",
+        "SEARCH":"SUCHE",
+        "LOGIN":"Anmeldung"
+    },
+    "CATEGORY" :{
+        "MEN" :"Männer",
+        "WOMEN":"FRAUEN",
+        "KIDS":"KINDER",
+        "ALL":"alle"
+    },
+    "LANGUAGE" :{
+        "SELECT":"SPRACHE WÄHLEN"
+    },
+    "FASHION" :{
+        "TITLE":"Willkommen bei Shopping Dunia !",
+        "CONTENT":"Die Welt der Mode Kleiderschrank mit unendlichen Möglichkeiten zur Auswahl Ihrer Favoriten."
+    },
+    "PRODUCT":{
+        "VIEW":"Details anzeigen",
+        "ADD":"In den Warenkorb legen"
+    },
+    "CART":{
+        "TOTAL":"Gesamt",
+        "EMPTY":"Ihr Warenkorb ist leer",
+        "CHECKOUT":"Auschecken",
+        "VIEW":"Warenkorb ansehen",
+        "PRODUCT":"Produkt",
+        "QUANTITY":"Menge",
+        "ACTION":"Aktion",
+        "OVERVIEW":"Überblick",
+        "SUBTOTAL":"Zwischensumme",
+        "CONTINUE":"Mit dem Einkaufen fortfahren",
+        "GO":"Einkaufen gehen",
+        "SHOPPINGCART":"Shopping Cart"
+    },
+    "CHECKOUT":{
+        "FORM":"Kassenformular",
+        "HOME":"Zuhause",
+        "CART":"Wagen",
+        "BILLINGADDRESS":"Rechnungsadresse",
+        "FIRSTNAME":"Vorname",
+        "LASTNAME":"Nachname",
+        "USERNAME":"Nutzername",
+        "EMAIL":"Email",
+        "ADDRESS":"Adresse",
+        "COUNTRY":"Land",
+        "STATE":"Zustand",
+        "ZIP":"Zip",
+        "SAMEBILLSHIP":"Die Lieferadresse entspricht meiner Rechnungsadresse",
+        "PAYMENT":"Zahlung",
+        "CREDIT":"Kreditkarte",
+        "DEBIT":"Debitkarte",
+        "PAYPAL":"Paypal",
+        "SUBMIT":"einreichen"
+
+    }
+}

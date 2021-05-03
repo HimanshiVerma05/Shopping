@@ -1,0 +1,61 @@
+{
+    "HOME" :{
+        "TITLE" :"HOME",
+        "LOGOUT":"Logout",
+        "CART":"My Cart",
+        "SEARCH":"Search",
+        "LOGIN":"Login"
+    },
+    "CATEGORY" :{
+        "MEN" :"Men",
+        "WOMEN":"Women",
+        "KIDS":"Kids",
+        "ALL":"All"
+    },
+    "LANGUAGE" :{
+        "SELECT":"Select Language"
+    },
+    "FASHION" :{
+        "TITLE":"Welcome to Shopping Dunia !",
+        "CONTENT":"The world of fashion closet with infinite choices to choose your favorites from."
+    },
+    "PRODUCT":{
+        "VIEW":"View Details",
+        "ADD":"Add To Cart"
+    },
+    "CART":{
+        "TOTAL":"Total",
+        "EMPTY":"Your Cart is Empty",
+        "CHECKOUT":"Checkout",
+        "VIEW":"View Cart",
+        "PRODUCT":"Product",
+        "QUANTITY":"Quantity",
+        "ACTION":"Action",
+        "OVERVIEW":"Overview",
+        "SUBTOTAL":"SubTotal",
+        "CONTINUE":"Continue Shopping",
+        "GO":"Go Shopping",
+        "SHOPPINGCART":"Shopping Cart"
+    },
+    "CHECKOUT":{
+        "FORM":"Checkout Form",
+        "HOME":"Home",
+        "CART":"Cart",
+        "BILLINGADDRESS":"Billing Address",
+        "FIRSTNAME":"First Name",
+        "LASTNAME":"Last Name",
+        "USERNAME":"UserName",
+        "EMAIL":"Email",
+        "ADDRESS":"Address",
+        "COUNTRY":"Country",
+        "STATE":"State",
+        "ZIP":"Zip",
+        "SAMEBILLSHIP":"Shipping address is the same as my billing address",
+        "PAYMENT":"Payment",
+        "CREDIT":"Credit Card",
+        "DEBIT":"Debit Card",
+        "PAYPAL":"Paypal",
+        "SUBMIT":"Submit"
+
+    }
+}

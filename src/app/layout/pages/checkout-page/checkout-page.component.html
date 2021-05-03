@@ -1,0 +1,44 @@
+<form id="form-box" method="get" (ngSubmit)="f.form.valid && orderPlaced()" #f="ngForm">
+ 
+
+  <div id="form-title">Shipping Details</div>
+
+  <div class="form-header">Name</div>
+  <input type="text" class="form-input" id="name" 
+  required name="name" [(ngModel)]="model.name" #name="ngModel"/>
+  <div *ngIf="f.submitted && !name.valid" class="help-block">Name is required</div>
+
+  <div class="form-header">Email</div>
+  <input type="text" class="form-input" id="email" 
+  required name="email" [(ngModel)]="model.email" #email="ngModel"/>
+  <div *ngIf="f.submitted && !email.valid" class="help-block">Email is required</div>
+
+  <div class="form-header">Phone Number</div>
+  <input type="text" class="form-input" id="phn" 
+  required name="phn" [(ngModel)]="model.phn" #phn="ngModel"/>
+  <div *ngIf="f.submitted && !phn.valid" class="help-block">Phone Number is required</div>
+
+  <div class="form-header">Address Line 1</div>
+  <input
+    type="search"
+    class="form-input"
+    id="addrs_1"
+    required name="addrs_1" [(ngModel)]="model.addrs_1" #addrs_1="ngModel"
+  />
+  <div *ngIf="f.submitted && !addrs_1.valid" class="help-block">Address is required</div>
+  <div class="form-header">Address Line 2</div>
+  <input type="text" class="form-input" id="addrs_2"  required name="addrs_2" [(ngModel)]="model.addrs_2" #addrs_2="ngModel"/>
+  <!--<div *ngIf="f.submitted && !addrs_2.valid" class="help-block">Address 2 is required</div> -->
+
+
+  <div class="form-header">State</div>
+  <input class="form-input" id="state" />
+
+  <div class="form-header">Postcode</div>
+  <input class="form-input" id="postcode" 
+  required name="postcode" [(ngModel)]="model.postcode" #postcode="ngModel"/>
+  <div *ngIf="f.submitted && !postcode.valid" class="help-block">PinCode is required</div>
+  
+   <!--<button type = "Submit"> Submit</button>-->
+  <input class="btn" type="Submit" (click)=orderPlaced() /> 
+</form>

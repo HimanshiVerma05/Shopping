@@ -1,0 +1,92 @@
+[
+  {
+    "id":1,
+    "title": "TShirt",
+    "brand": "Numero Uno",
+    "price": 2000,
+    "description": "Men Red Tshirt",
+    "image": "men1.jpg",
+    "category":"men"
+  },
+  {
+    "id":2,
+    "title": "Blue jeans",
+    "brand": "Levis",
+    "price": 1500,
+    "description": "Women plain blue jeans",
+    "image": "women1.jpg",
+    "category":"women"
+  },
+  {
+    "id":3,
+    "title": "Flare Frock",
+    "brand": "H & M",
+    "price": 1800,
+    "description": "Cute flare frock",
+    "image": "kid1.jpg",
+    "category":"kids"
+  },
+  {
+    "id":4,
+    "title": "Stripe Tshirt",
+    "brand": "US Polo",
+    "price": 1000,
+    "description": "Round neck grey white striped tshirt",
+    "image": "men2.jpg",
+    "category":"men"
+  },
+  {
+    "id":5,
+    "title": "Dress",
+    "brand": "Zara",
+    "price": 1100,
+    "description": "Yellow printed dress",
+    "image": "women2.jpg",
+    "category":"women"
+  },
+  {
+    "id":6,
+    "title": "Shorts",
+    "brand": "FirstCry",
+    "price": 1000,
+    "description": "Product 6",
+    "image": "kid2.jpg",
+    "category":"kids"
+  },
+  {
+    "id":7,
+    "title": "Jeans",
+    "brand": "Levis",
+    "price": 2200,
+    "description": "Fitted black jeans",
+    "image": "men3.jpg",
+    "category":"men"
+  },
+  {
+    "id":8,
+    "title": "Skirt",
+    "brand": "Madamme",
+    "price": 1900,
+    "description": "Black Jeans Skirt",
+    "image": "women3.jpg",
+    "category":"women"
+  },
+  {
+    "id":9,
+    "title": "WrapOn",
+    "brand": "FirstCry",
+    "price": 1000,
+    "description": "Kids wrap on ",
+    "image": "kid3.jpg",
+    "category":"kids"
+  },
+  {
+    "id":10,
+    "title": "Boot",
+    "brand": "Red Tape",
+    "price": 2000,
+    "description": "Brown leather boot men",
+    "image": "men4.jpg",
+    "category":"men"
+  }
+]

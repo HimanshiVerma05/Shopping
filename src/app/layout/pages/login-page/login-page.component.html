@@ -1,0 +1,48 @@
+<div class="register-box">
+    <div class="container">
+      <div>
+        <span class="login-logo">
+          <i class="pi pi-user"></i>
+        </span>
+        <p class="register-title">User Login</p>
+      </div>
+      <form class="register-register-form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
+        <span class="icon-username">
+          <i class="pi pi-user"></i>
+        </span>
+        <fieldset class="register-input-container">
+          <div class="form-group" class="register-input-item">
+            <span class="ui-float-label">
+              <input id="float-username" type="text" name="username"
+                class="register-user-input-username register-user-input"
+                [(ngModel)]="model.username" #username="ngModel" required>
+              <label for="float-username">Username</label>
+            </span>
+            <div *ngIf="f.submitted && !username.valid" class="help-block">Username is required</div>
+        
+          </div>
+        </fieldset>
+        <span class="icon-password">
+          <i class="pi pi-lock"></i>
+        </span>
+        <fieldset class="register-input-container register-password">
+          <div class="form-group" class="register-input-item">
+            <span class="ui-float-label">
+              <input id="float-password" type="password" name="password"
+                class="register-user-input-password register-user-input"
+                [(ngModel)]="model.password" #password="ngModel" required>
+              <label for="float-password">Password</label>
+            </span>
+            <div *ngIf="f.submitted && !password.valid" class="help-block">Password is required</div>
+          </div>
+        </fieldset>
+        <div *ngIf="isShown" id="InvalidCred"  >Invalid User Credentials</div>
+        <div class="register-register-button-container">
+          <button [disabled]="loading" type = "Submit" class="register-register-button">Submit</button>
+          <img *ngIf="loading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+          
+        </div>
+      </form>
+    </div>
+  </div>
+  

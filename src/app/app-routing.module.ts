@@ -1,10 +1,46 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { CartPageComponent } from './cart/cart-page/cart-page.component';
+import { CheckoutPageComponent } from './checkout/components/checkout-page/checkout-page.component';
 
-const routes: Routes = [];
+
+import { LoginPageComponent } from './layout/components/login-page/login-page.component';
+import { MainPageComponent } from './layout/components/main-page/main-page.component';
+import { AuthGuardGuard } from './RoutingGuards/auth-guard.guard';
+
+const routes: Routes = [
+ 
+    { path: 'login', component: LoginPageComponent },
+    
+    { path: 'home', component: MainPageComponent,
+    canActivate: [AuthGuardGuard]
+  
+  },
+    {
+      path:'product',
+
+      loadChildren: () => import('./layout/layout.module').then(m => m.LayoutModule)
+    
+    }, 
+   
+    //checkout module is lazy loaded .
+    {
+      path:'checkOut',
+      canActivate: [AuthGuardGuard],
+      loadChildren: () => import('./checkout/checkout.module').then(m => m.CheckoutModule),
+      component: CheckoutPageComponent
+    
+    },
+   // { path: 'checkOut', component: CheckoutPageComponent,
+   // canActivate: [AuthGuardGuard] },
+    { path: 'cart', component: CartPageComponent ,canActivate: [AuthGuardGuard]  },
+    { path: '', component: MainPageComponent },
+    // otherwise redirect to home
+    { path: '**', redirectTo: '/home' }
+];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
