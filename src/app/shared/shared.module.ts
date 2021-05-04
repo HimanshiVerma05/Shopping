@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 
 import { CartModule } from '../cart/cart.module';
 import { TranslateModule } from '@ngx-translate/core';
+import { RouterTestingModule } from '@angular/router/testing';
 
 
 
@@ -24,7 +25,8 @@ const components = [
     FormsModule,
     ReactiveFormsModule,
     CartModule,
-    TranslateModule
+    TranslateModule,
+    RouterTestingModule
      
   ],
   exports: [

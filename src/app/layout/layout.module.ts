@@ -13,6 +13,7 @@ import { SharedModule } from '../shared/shared.module';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { QuantityControlModule } from '../quantity-control/quantity-control.module';
 import { TranslateModule } from '@ngx-translate/core';
+import { RouterTestingModule } from '@angular/router/testing';
 
 
 
@@ -28,7 +29,8 @@ import { TranslateModule } from '@ngx-translate/core';
     FormsModule,
     SharedModule,
     QuantityControlModule,
-    TranslateModule
+    TranslateModule,
+    RouterTestingModule
     
   ]
    

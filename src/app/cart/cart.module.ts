@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { CheckoutModule } from '../checkout/checkout.module';
 import { QuantityControlModule } from '../quantity-control/quantity-control.module';
 import { TranslateModule } from '@ngx-translate/core';
+import { RouterTestingModule } from '@angular/router/testing';
 
 
 
@@ -21,10 +22,11 @@ import { TranslateModule } from '@ngx-translate/core';
     FormsModule,
     CheckoutModule,
     QuantityControlModule,
-    TranslateModule
+    TranslateModule,
+    RouterTestingModule
   ],
   exports: [
-    CartBaseComponent, CartPageComponent, CartPopupComponent
+    CartBaseComponent, CartPageComponent, CartPopupComponent 
     ]
 })
 export class CartModule { }

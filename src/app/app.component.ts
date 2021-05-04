@@ -7,7 +7,7 @@ import { Component,ViewContainerRef,ComponentFactoryResolver} from '@angular/cor
 })
 export class AppComponent {
 
-  title = 'Shopping Dunia';
+  title = 'Shopping';
 
   
 }
