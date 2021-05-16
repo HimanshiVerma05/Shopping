@@ -45,7 +45,7 @@ export class MainPageComponent implements OnInit {
         if (this.allProductList != null && searchText !== "" && searchText != null && searchText.toLowerCase() != "all") {
 
           this.filteredProducts = this.allProductList.filter(x => x.title.toLowerCase().indexOf(searchText) != -1 || x.description.toLowerCase().indexOf(searchText) != -1
-            || x.brand.toLowerCase().indexOf(searchText) != -1 || x.category.toLowerCase().indexOf(searchText) != -1);
+            || x.brand.toLowerCase().indexOf(searchText) != -1 || x.category.toLowerCase()===searchText);
           // console.log(this.filteredProducts);
           this.products = this.filteredProducts;
           //console.log('products after filtering----'+this.allProductList);
