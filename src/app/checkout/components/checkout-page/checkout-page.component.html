@@ -1,32 +1,33 @@
+
 <div class="container">
   <div class="py-5 text-center">
      
-      <h2>Checkout form</h2>
+      <h2>{{ 'CHECKOUT.FORM' | translate }}</h2>
       <ol class="product-breadcrumbs">
-        <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>
-        <li class="breadcrumb-item">  <a routerLink="/cart">Cart</a></li>
+        <li class="breadcrumb-item"><a routerLink="/home">{{ 'CHECKOUT.HOME' | translate }}</a></li>
+        <li class="breadcrumb-item">  <a routerLink="/cart">{{ 'CHECKOUT.CART' | translate }}</a></li>
         
     </ol>
   </div>
-  <div class="row">
-     
+  <div class="row"> 
+         
       <div class="col-md-8 order-md-1">
-          <h4 class="mb-3">Billing address</h4>
-          <form class="needs-validation" (ngSubmit)="f.form.valid && orderPlaced()" #f="ngForm" >
+          <h4 class="mb-3">{{ 'CHECKOUT.BILLINGADDRESS' | translate }}</h4>
+          <form class="needs-validation" method="post" (ngSubmit)="orderPlaced()" #f="ngForm" novalidate>
               <div class="row">
                   <div class="col-md-6 mb-3">
-                      <label for="firstName">First name</label>
+                      <label for="firstName">{{ 'CHECKOUT.FIRSTNAME' | translate }}</label>
                       <input type="text" class="form-control" id="firstName" name="firstName" required>
                       <div  class="invalid-feedback"> Valid first name is required. </div>
                   </div>
                   <div class="col-md-6 mb-3">
-                      <label for="lastName">Last name</label>
+                      <label for="lastName">{{ 'CHECKOUT.LASTNAME' | translate }}</label>
                       <input type="text" class="form-control" id="lastName" required>
                       <div class="invalid-feedback"> Valid last name is required. </div>
                   </div>
               </div>
               <div class="mb-3">
-                  <label for="username">Username</label>
+                  <label for="username">{{ 'CHECKOUT.USERNAME' | translate }}</label>
                   <div class="input-group">
                       <div class="input-group-prepend">
                           <span class="input-group-text">@</span>
@@ -36,22 +37,22 @@
                   </div>
               </div>
               <div class="mb-3">
-                  <label for="email">Email <span class="text-muted">(Optional)</span></label>
+                  <label for="email">{{ 'CHECKOUT.EMAIL' | translate }} <span class="text-muted">(Optional)</span></label>
                   <input type="email" class="form-control" id="email" placeholder="you@example.com">
                   <div class="invalid-feedback"> Please enter a valid email address for shipping updates. </div>
               </div>
               <div class="mb-3">
-                  <label for="address">Address</label>
+                  <label for="address">{{ 'CHECKOUT.ADDRESS' | translate }}</label>
                   <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
                   <div class="invalid-feedback"> Please enter your shipping address. </div>
               </div>
               <div class="mb-3">
-                  <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+                  <label for="address2">{{ 'CHECKOUT.BILLINGADDRESS' | translate }} 2 <span class="text-muted">(Optional)</span></label>
                   <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
               </div>
               <div class="row">
                   <div class="col-md-5 mb-3">
-                      <label for="country">Country</label>
+                      <label for="country">{{ 'CHECKOUT.COUNTRY' | translate }}</label>
                       <select class="custom-select d-block w-100" id="country" required>
                           <option value="">Choose...</option>
                           
@@ -61,7 +62,7 @@
                       <div class="invalid-feedback"> Please select a valid country. </div>
                   </div>
                   <div class="col-md-4 mb-3">
-                      <label for="state">State</label>
+                      <label for="state">{{ 'CHECKOUT.STATE' | translate }}</label>
                       <select class="custom-select d-block w-100" id="state" required>
                           <option value="">Choose...</option>
                           <option>Uttar Pradesh</option>
@@ -73,7 +74,7 @@
                       <div class="invalid-feedback"> Please provide a valid state. </div>
                   </div>
                   <div class="col-md-3 mb-3">
-                      <label for="zip">Zip</label>
+                      <label for="zip">{{ 'CHECKOUT.ZIP' | translate }}</label>
                       <input type="text" class="form-control" id="zip" required>
                       <div class="invalid-feedback"> Zip code required. </div>
                   </div>
@@ -81,23 +82,23 @@
               <hr class="mb-4">
               <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="same-address">
-                  <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
+                  <label class="custom-control-label" for="same-address">{{ 'CHECKOUT.SAMEBILLSHIP' | translate }}</label>
               </div>
 
               <hr class="mb-4">
-              <h4 class="mb-3">Payment</h4>
+              <h4 class="mb-3">{{ 'CHECKOUT.PAYMENT' | translate }}</h4>
               <div class="d-block my-3">
                   <div class="custom-control custom-radio">
                       <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
-                      <label class="custom-control-label" for="credit">Credit card</label>
+                      <label class="custom-control-label" for="credit">{{ 'CHECKOUT.CREDIT' | translate }}</label>
                   </div>
                   <div class="custom-control custom-radio">
                       <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
-                      <label class="custom-control-label" for="debit">Debit card</label>
+                      <label class="custom-control-label" for="debit">{{ 'CHECKOUT.DEBIT' | translate }}</label>
                   </div>
                   <div class="custom-control custom-radio">
                       <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
-                      <label class="custom-control-label" for="paypal">PayPal</label>
+                      <label class="custom-control-label" for="paypal">{{ 'CHECKOUT.PAYPAL' | translate }}</label>
                   </div>
               </div>
               <div class="row">
@@ -126,7 +127,7 @@
                   </div>
               </div>
               <hr class="mb-4">
-              <button class="btn btn-primary btn-lg btn-block"  type="submit">Submit</button>
+              <button class="btn btn-primary btn-lg btn-block"  type="submit">{{ 'CHECKOUT.SUBMIT' | translate }}</button>
           </form>
       </div>
   </div>

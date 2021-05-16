@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { CheckoutRoutingModule } from './checkout-routing.module';
 import { CheckoutPageComponent } from './components/checkout-page/checkout-page.component';
 import { FormsModule } from '@angular/forms';
-import { OrderSuccessComponent } from './components/order-success/order-success.component';
+
 import { TranslateModule } from '@ngx-translate/core';
 import { RouterTestingModule } from '@angular/router/testing';
 
@@ -16,15 +16,13 @@ const components = [
 
 @NgModule({
   declarations: [
-    CheckoutPageComponent,
-    OrderSuccessComponent
+    CheckoutPageComponent
   ],
   imports: [
     CommonModule,
     CheckoutRoutingModule,
     FormsModule,
-    TranslateModule,
-    RouterTestingModule
+    TranslateModule
   ],
   exports: [
     components   

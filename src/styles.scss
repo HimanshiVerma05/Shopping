@@ -81,21 +81,25 @@ body {
     color: #fff;
     background-color: #3b3d38;
     border-color: #3b3d38;
+    overflow: hidden;
 }
 .button.button-primary:hover {
     color: #fff;
     background-color: #52525b;
     border-color: #52525b;
+    overflow: hidden;
 }
 .button.button-secondary {
     color: #1d1d20;
     background-color: #fff;
     border-color: #1d1d20;
+    overflow: hidden;
 }
 .button.button-secondary:hover {
     color: #fff;
     background-color: #8e8e90;
     border-color: #8e8e90;
+    overflow: hidden;
 }
 .button.button-wide {
     width: 100%;

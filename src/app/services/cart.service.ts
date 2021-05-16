@@ -13,6 +13,7 @@ export class CartService {
       this.toggleCartSubject.next(!this.toggleCartSubject.getValue());
   };
   addToCart = (cart:Cart) => {
+    
       let current = this.cartListSubject.getValue();
       let dup = current.find(c=>c.product.title === cart.product.title);
       if(dup) dup.quantity += cart.quantity;
@@ -27,5 +28,6 @@ export class CartService {
       current.splice(index,1);
       this.cartListSubject.next(current);
   };
+  
  
 }

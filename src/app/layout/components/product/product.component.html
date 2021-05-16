@@ -1,16 +1,20 @@
-
+<app-header  ></app-header>
 <div *ngIf="product" class="product-page">
     <div class="product-page-container">
-        <ol class="product-breadcrumbs">
-            <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>
-            <li class="breadcrumb-item">  <a routerLink="/home">Plates</a></li>
+      <!-- <ol class="product-breadcrumbs">
+            <li class="breadcrumb-item"><a  [routerLink]="['/home']" >Home</a></li>
+            <li class="breadcrumb-item">  <a routerLink='' >{{product.category}}</a></li>
             <li class="breadcrumb-item">  {{product.title}}</li>
-        </ol>
+        </ol>  -->
+   
         <div class="row">
             <div class="col-md-8">
                 <div class="product-details-image" [ngStyle]="{'background-image': 'url(./assets/imgs/' + product.image + ')'}"></div>
             </div>
-            <div class="col-md-4">
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-md-8">
                 <div class="product-details-row">
                     <div class="product-brand">{{product.brand}}</div>
                     <h1 class="product-title">{{product.title}}</h1>
@@ -23,5 +27,6 @@
                 </div>
             </div>
         </div>
+        
     </div>
 </div>

@@ -22,8 +22,7 @@ import { RouterTestingModule } from '@angular/router/testing';
     FormsModule,
     CheckoutModule,
     QuantityControlModule,
-    TranslateModule,
-    RouterTestingModule
+    TranslateModule
   ],
   exports: [
     CartBaseComponent, CartPageComponent, CartPopupComponent 

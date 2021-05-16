@@ -31,17 +31,17 @@ export class HeaderComponent implements OnInit {
   }
   searchMen()
   {
-    this.searchText="men";
+    this.searchText="Men";
       this.searchEvent.emit(this.searchText);
   }
   searchWomen()
   {
-    this.searchText="women";
+    this.searchText="Women";
       this.searchEvent.emit(this.searchText);
   }
   searchKids()
   {
-    this.searchText="kids";
+    this.searchText="Kids";
       this.searchEvent.emit(this.searchText);
   }
   searchAll()
@@ -51,7 +51,7 @@ export class HeaderComponent implements OnInit {
   }
     constructor(
         private cartService: CartService,
-        private router: Router,
+        public router: Router,
         private productService:ProductService,
         public translate: TranslateService,
         private authService:UserAuthService) {

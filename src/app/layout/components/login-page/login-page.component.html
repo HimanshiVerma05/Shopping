@@ -6,10 +6,10 @@
 <body>
     <div id="login">
         <h3 class="text-center text-info pt-5">Welcome to Shopping Dunia ! </h3>
-        <div class="container">
-            <div id="login-row" class="row justify-content-center align-items-center">
-                <div id="login-column" class="col-md-6">
-                    <div id="login-box" class="col-md-12">
+        <div class="container ">
+            <div id="login-row" class="row justify-content-center align-items-center ">
+                <div id="login-column" class="col-md-6 " >
+                    <div id="login-box" class="col-md-12 h-auto d-inline-block">
                         <form id="login-form" class="form" action="" method="post" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
                             <h3 class="text-center text-info">Login</h3>
                             <div class="form-group">
@@ -19,7 +19,7 @@
                             <div *ngIf="f.submitted && !username.valid" class="help-block">Username is required</div>
                             <div class="form-group">
                                 <label for="password" class="text-info">Password:</label><br>
-                                <input type="text" name="password" [(ngModel)]="model.password" #password="ngModel" required id="password" class="form-control">
+                                <input type="password" name="password" [(ngModel)]="model.password" #password="ngModel" required id="password" class="form-control">
                             </div>
                             <div *ngIf="f.submitted && !password.valid" class="help-block">Password is required</div>
                             <div *ngIf="isShown" id="InvalidCred"  >Invalid User Credentials</div>

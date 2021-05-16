@@ -11,7 +11,8 @@ describe('ProductComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports :[RouterTestingModule,
+      imports :[
+        RouterTestingModule,
         HttpClientModule,
         TranslateModule.forRoot({
           loader: {

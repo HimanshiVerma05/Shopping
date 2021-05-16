@@ -51,18 +51,7 @@ export class LoginPageComponent implements OnInit {
     }
 
   }
-  authenticate(username: string, password: string) {
-
-    //console.log('user data '+this.users);
-    const user = this.users.find(x => x.username === username && x.password === password);
-    if (!user) {
-      return false;
-
-    }
-    else {
-      return true;
-    }
-  }
+  
 }
 
 

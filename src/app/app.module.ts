@@ -15,6 +15,9 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { RouterModule } from '@angular/router';
+import { ProductComponent } from './layout/components/product/product.component';
+
 
 //For internationalization
 // AoT requires an exported function for factories
@@ -24,6 +27,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
 
 @NgModule({
   declarations: [
+    
     AppComponent
     
     
@@ -35,8 +39,9 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-   
+    
     FormsModule,
+    
     
     //for internationalization 
     TranslateModule.forRoot({

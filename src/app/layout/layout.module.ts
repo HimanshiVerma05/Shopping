@@ -14,6 +14,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { QuantityControlModule } from '../quantity-control/quantity-control.module';
 import { TranslateModule } from '@ngx-translate/core';
 import { RouterTestingModule } from '@angular/router/testing';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -22,15 +23,15 @@ import { RouterTestingModule } from '@angular/router/testing';
 
 @NgModule({
   declarations: [LoginPageComponent, MainPageComponent, 
-    ProductComponent, SearchComponent ],
+     SearchComponent ,ProductComponent],
   imports: [
     CommonModule,
     LayoutRoutingModule,
     FormsModule,
     SharedModule,
     QuantityControlModule,
-    TranslateModule,
-    RouterTestingModule
+    TranslateModule
+    
     
   ]
    

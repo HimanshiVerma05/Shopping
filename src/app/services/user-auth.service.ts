@@ -21,10 +21,14 @@ export class UserAuthService {
 
   constructor(private http: HttpClient, private router: Router, public userdataService: UserDataService) {
 
+  this.getUsers();
+  }
+
+  getUsers(){
     this.sub = this.userdataService.getUsers()
-      .subscribe(res => {
-        this.users = res;
-      })
+    .subscribe(res => {
+      this.users = res;
+    })
   }
 
   authenticate(username: string, password: string) {

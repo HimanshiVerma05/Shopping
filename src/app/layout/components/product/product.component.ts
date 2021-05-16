@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Product } from 'src/app/model/product';
 import { CartService } from 'src/app/services/cart.service';
 import { ProductService } from 'src/app/services/product.service';
+
 
 @Component({
   selector: 'app-product',
@@ -14,7 +15,12 @@ export class ProductComponent implements OnInit {
   public product:Product;
   quantity: number = 1;
   constructor(private productService:ProductService,
-    private cartService:CartService,private route: ActivatedRoute) { }
+    private cartService:CartService,private route: ActivatedRoute) {
+
+        if(this.cartService.toggleCartSubject.getValue()){
+            this.cartService.toggleCart();
+           }
+     }
 
     ngOnInit() {
       this.route.params
@@ -36,9 +42,14 @@ export class ProductComponent implements OnInit {
   };
   addToCart = (product) => {
       if(this.quantity) this.cartService.addToCart({product,quantity:this.quantity})
+
+      if(!this.cartService.toggleCartSubject.getValue()){
+        this.cartService.toggleCart();
+       }
   };
   ngOnDestroy() {
       this.sub.unsubscribe();
   }
+
 
 }

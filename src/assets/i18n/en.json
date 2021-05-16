@@ -22,6 +22,7 @@
     "PRODUCT":{
         "VIEW":"View Details",
         "ADD":"Add To Cart"
+        
     },
     "CART":{
         "TOTAL":"Total",

@@ -2,7 +2,7 @@
     width: 100%;
 }
 .product-page-container {
-    max-width: 1140px;
+    max-width: 1300px;
     text-align: center;
     padding: 0 30px;
     margin: auto;
@@ -25,7 +25,7 @@
 }
 
 .product-details-image {
-    width: 95%;
+    width: 100%;
     padding-top: 63.3%;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -63,5 +63,6 @@
 }
 .product-cart-button {
     vertical-align: top;
-    margin-left:5px
+    margin-left:5px;
+   
 }

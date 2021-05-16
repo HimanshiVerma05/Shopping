@@ -18,4 +18,22 @@ describe('UserAuthService', () => {
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
+
+
+    //Test case to check if the user B and password B is able to be auhenticated.
+    it("should authenticate user ", () => {
+     
+     service.users=[
+      {
+        "id":2,
+       "username":"B", 
+      "firstName":"B",
+       "lastName":"B",
+      "password":"B" 
+     }
+
+    ];
+    
+      expect(service.authenticate('B','B')).toBeTrue();
+    }); 
 });
