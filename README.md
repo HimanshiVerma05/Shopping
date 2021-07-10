@@ -1,3 +1,5 @@
+# Description 
+This is sample e-commerce template developed for sole learning purpose. It can be further enhanced as a shopping site . The technologies involved are - Angular 11, Bootstrap4 , HTML 5 and CSS 3
 # Shopping
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.4.
